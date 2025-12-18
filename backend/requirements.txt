@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+paddlepaddle
+paddleocr
+volcenginesdkarkruntime
+pandas
+openpyxl
+opencv-python-headless
+numpy
+reportlab
+python-dotenv
