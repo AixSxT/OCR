@@ -13,11 +13,15 @@ class Settings(BaseSettings):
         "*"                       # 调试阶段允许所有
     ]
 
-    # --- 核心凭证 (从环境变量或默认值加载) ---
-    # 你的火山引擎配置
-    VOLC_API_KEY: str = os.getenv("VOLC_API_KEY", "51db8305-18bd-4e01-bb39-9af9344ad281")
-    VOLC_ENDPOINT_ID: str = os.getenv("VOLC_ENDPOINT_ID", "doubao-seed-1-6-vision-250815")
-    VOLC_BASE_URL: str = os.getenv("VOLC_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
+    # --- 核心凭证 (已填入您的配置) ---
+    # 您的火山引擎 API Key
+    VOLC_API_KEY: str = "51db8305-18bd-4e01-bb39-9af9344ad281"
+    
+    # 您的 Endpoint ID (模型名称)
+    VOLC_ENDPOINT_ID: str = "doubao-seed-1-6-vision-250815"
+    
+    # 您的 Base URL
+    VOLC_BASE_URL: str = "https://ark.cn-beijing.volces.com/api/v3"
 
     class Config:
         case_sensitive = True
